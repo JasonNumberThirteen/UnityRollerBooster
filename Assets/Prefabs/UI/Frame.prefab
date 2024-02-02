@@ -105,5 +105,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c703d80191841f4fa60a0b450487573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oscillation: 3
+  oscillation: 4
   periodOfOscillation: 6
