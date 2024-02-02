@@ -7,16 +7,20 @@ public class MainMenuManager : MonoBehaviour
 
 	public void OnStartGameClick() => sceneManager.LoadScene();
 	public void OnExitClick() => Application.Quit();
+	public void OnSettingsClick() => SetSettingsActive(true);
+	public void OnBackFromSettingsClick() => SetSettingsActive(false);
+	public void OnInformationClick() => SetInformationActive(true);
+	public void OnBackFromInformationClick() => SetInformationActive(false);
 
-	public void OnSettingsClick()
+	private void SetSettingsActive(bool active)
 	{
-		mainMenuPanel.SetActive(false);
-		settingsPanel.SetActive(true);
+		mainMenuPanel.SetActive(!active);
+		settingsPanel.SetActive(active);
 	}
 
-	public void OnInformationClick()
+	private void SetInformationActive(bool active)
 	{
-		mainMenuPanel.SetActive(false);
-		informationPanel.SetActive(true);
+		mainMenuPanel.SetActive(!active);
+		informationPanel.SetActive(active);
 	}
 }
