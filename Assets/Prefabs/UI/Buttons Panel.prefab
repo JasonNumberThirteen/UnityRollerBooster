@@ -92,7 +92,7 @@ MonoBehaviour:
   blinkMinInterval: 0.1
   blinkMaxInterval: 1.5
   blinkDuration: 0.08
-  alphaTarget: 0.155
+  alphaTarget: 0.182
 --- !u!1 &6631140010375190321
 GameObject:
   m_ObjectHideFlags: 0
