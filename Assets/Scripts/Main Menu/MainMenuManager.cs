@@ -4,14 +4,22 @@ public class MainMenuManager : MonoBehaviour
 {
 	public GameObject mainMenuPanel, settingsPanel, informationPanel;
 	public GameSceneManager sceneManager;
-
-	public void OnStartGameClick() => sceneManager.LoadScene();
+	public ScreenFader screenFader;
+	
 	public void OnExitClick() => Application.Quit();
 	public void OnSettingsClick() => SetSettingsActive(true);
 	public void OnBackFromSettingsClick() => SetSettingsActive(false);
 	public void OnInformationClick() => SetInformationActive(true);
 	public void OnBackFromInformationClick() => SetInformationActive(false);
 
+	public void OnStartGameClick()
+	{
+		screenFader.isFadingOut = false;
+
+		Invoke(nameof(LoadGameScene), screenFader.duration);
+	}
+
+	private void LoadGameScene() => sceneManager.LoadScene();
 	private void SetSettingsActive(bool active)
 	{
 		mainMenuPanel.SetActive(!active);
