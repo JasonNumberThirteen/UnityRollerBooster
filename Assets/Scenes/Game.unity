@@ -809,6 +809,7 @@ GameObject:
   - component: {fileID: 1714542239}
   - component: {fileID: 1714542238}
   - component: {fileID: 1714542237}
+  - component: {fileID: 1714542241}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -903,3 +904,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1714542241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714542236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680538395d3c9ad4d96d75fe93b7c46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
