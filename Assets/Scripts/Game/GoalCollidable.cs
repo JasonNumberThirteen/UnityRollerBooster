@@ -8,5 +8,10 @@ public class GoalCollidable : MonoBehaviour, ICollidable
 		{
 			pm.enabled = false;
 		}
+
+		if(TryGetComponent(out GoalRenderer gr))
+		{
+			gr.ChangeMaterial();
+		}
 	}
 }
