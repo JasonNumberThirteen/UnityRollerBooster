@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 6369959}
   - component: {fileID: 6369963}
   - component: {fileID: 6369964}
+  - component: {fileID: 6369968}
   - component: {fileID: 6369965}
   - component: {fileID: 6369966}
   - component: {fileID: 6369967}
@@ -331,6 +332,18 @@ MonoBehaviour:
   respawnPoint: {fileID: 281406825}
   minimumY: -20
   freezeDuration: 1
+--- !u!114 &6369968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6369958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3706d3402bcdd6b42afaf531ddef99d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
