@@ -330,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 281406825}
   minimumY: -20
+  freezeDuration: 1
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
