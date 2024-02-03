@@ -12,7 +12,7 @@ public class ShadowMover : MonoBehaviour
 	private void Awake() => shadow = GetComponent<Shadow>();
 	private void Start() => startDistance = shadow.effectDistance;
 	private void Update() => shadow.effectDistance = EffectDistance();
-	private float Angle() => Time.time*Mathf.PI / periodOfOscillation*2;
+	private float Angle() => Time.unscaledTime*Mathf.PI / periodOfOscillation*2;
 	private float MovementX(float angle) => Mathf.Sin(-angle)*oscillation;
 	private float MovementY(float angle) => Mathf.Sin(angle)*oscillation;
 
