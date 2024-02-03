@@ -138,8 +138,8 @@ GameObject:
   - component: {fileID: 6369963}
   - component: {fileID: 6369964}
   - component: {fileID: 6369968}
-  - component: {fileID: 6369965}
   - component: {fileID: 6369966}
+  - component: {fileID: 6369965}
   - component: {fileID: 6369967}
   m_Layer: 0
   m_Name: Ball
@@ -305,6 +305,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  dizzySpeedMultiplier: 0.5
+  dizzyDuration: 2
+  dizzyFallDistance: 5
   deathFallDistance: 7
 --- !u!114 &6369966
 MonoBehaviour:
@@ -918,7 +921,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-527448
+  m_Name: pb_Mesh-593988
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2173,7 +2176,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-527430
+  m_Name: pb_Mesh-593970
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2587,7 +2590,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-540732
+  m_Name: pb_Mesh64972
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
