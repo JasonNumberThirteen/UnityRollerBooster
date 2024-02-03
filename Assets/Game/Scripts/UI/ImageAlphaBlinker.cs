@@ -13,7 +13,7 @@ public class ImageAlphaBlinker : MonoBehaviour
 	private void Awake() => graphic = GetComponent<Graphic>();
 	private float CurrentAlpha() => graphic.color.a;
 	private bool TimerHasNotReachedTheEndYet() => blinkTimer < blinkTimerEnd;
-	private void IncreaseTimer() => blinkTimer = Mathf.Clamp(blinkTimer + Time.deltaTime, 0f, blinkTimerEnd);
+	private void IncreaseTimer() => blinkTimer = Mathf.Clamp(blinkTimer + Time.unscaledDeltaTime, 0f, blinkTimerEnd);
 	private void ResetTimer() => blinkTimer = 0;
 	private void SetTimerEnd() => blinkTimerEnd = CurrentAlphaIsTheSameAsInitial() ? BlinkInterval() : blinkDuration;
 	private bool CurrentAlphaIsTheSameAsInitial() => CurrentAlpha() == initialAlpha;
