@@ -1,5 +1,5 @@
 # Roller Booster
-<p align = "center"><img src="./Assets/Game/Sprites/GameLogo.png?raw=true" alt = "Rumble In The Factory"/></p>
+<p align = "center"><img src="./Assets/Game/Sprites/Logos/GameLogo.png?raw=true" alt = "Roller Booster"/></p>
 
 > An arcade game inspired by "Hamsterball" (2004) made using "Unity" game engine with C# language.
 
