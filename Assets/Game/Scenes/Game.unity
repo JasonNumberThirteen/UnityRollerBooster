@@ -1438,7 +1438,7 @@ GameObject:
   - component: {fileID: 1617252724}
   - component: {fileID: 1617252723}
   m_Layer: 0
-  m_Name: Elevator
+  m_Name: Blue Elevator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
