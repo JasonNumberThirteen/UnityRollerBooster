@@ -571,6 +571,7 @@ GameObject:
   - component: {fileID: 664777814}
   - component: {fileID: 664777816}
   - component: {fileID: 664777815}
+  - component: {fileID: 664777817}
   m_Layer: 5
   m_Name: Race Title Background
   m_TagString: Untagged
@@ -633,6 +634,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664777813}
   m_CullTransparentMesh: 1
+--- !u!114 &664777817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664777813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6450eb84d4683d40bf4e7f70d65cf4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasScaler: {fileID: 1392711641}
+  targetX: 0
+  duration: 1
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
