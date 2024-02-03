@@ -9,4 +9,12 @@ public class PlayerCollisionDetector : MonoBehaviour
 			collidable.TriggerOnCollision(gameObject);
 		}
 	}
+
+	private void OnCollisionExit(Collision collision)
+	{
+		if(collision.gameObject.TryGetComponent(out IReversibleCollision reversibleCollision))
+		{
+			reversibleCollision.TriggerOnCollisionExit(gameObject);
+		}
+	}
 }
