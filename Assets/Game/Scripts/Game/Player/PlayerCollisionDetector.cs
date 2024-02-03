@@ -8,6 +8,11 @@ public class PlayerCollisionDetector : MonoBehaviour
 		{
 			collidable.TriggerOnCollision(gameObject);
 		}
+
+		if(gameObject.TryGetComponent(out PlayerMovement pm))
+		{
+			pm.CheckFallDistance();
+		}
 	}
 
 	private void OnCollisionExit(Collision collision)

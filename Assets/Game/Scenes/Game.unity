@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
+  deathFallDistance: 7
 --- !u!114 &6369966
 MonoBehaviour:
   m_ObjectHideFlags: 0

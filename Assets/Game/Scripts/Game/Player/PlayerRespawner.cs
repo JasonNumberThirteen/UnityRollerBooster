@@ -8,17 +8,7 @@ public class PlayerRespawner : MonoBehaviour
 
 	private Rigidbody rb;
 
-	private void Awake() => rb = GetComponent<Rigidbody>();
-
-	private void Update()
-	{
-		if(transform.position.y <= minimumY)
-		{
-			OnRespawn();
-		}
-	}
-
-	private void OnRespawn()
+	public void Respawn()
 	{
 		transform.position = respawnPoint.position;
 		rb.isKinematic = true;
@@ -26,5 +16,14 @@ public class PlayerRespawner : MonoBehaviour
 		Invoke(nameof(DisableKinematicBody), freezeDuration);
 	}
 
+	private void Awake() => rb = GetComponent<Rigidbody>();
 	private void DisableKinematicBody() => rb.isKinematic = false;
+
+	private void Update()
+	{
+		if(transform.position.y <= minimumY)
+		{
+			Respawn();
+		}
+	}
 }
