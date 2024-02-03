@@ -1972,6 +1972,11 @@ PrefabInstance:
       propertyPath: m_text
       value: TEST RACE
       objectReference: {fileID: 0}
+    - target: {fileID: 6582383304707260977, guid: a61e05cb008a1bb4bbcb827d8a261577,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: cb0db16269b9c7d4c965bade014d445b, type: 2}
     - target: {fileID: 8318545049903464315, guid: a61e05cb008a1bb4bbcb827d8a261577,
         type: 3}
       propertyPath: m_Pivot.x
