@@ -13,6 +13,7 @@ public class RectTransformMover : MonoBehaviour
 	private bool reachedTarget = false, isGoingLeft;
 	private int currentDirection = 1;
 
+	private void DestroySelf() => Destroy(gameObject);
 	private void Awake() => rectTransform = GetComponent<RectTransform>();
 	private float DifferenceX() => Mathf.Abs(targetX - initialPosition.x);
 	private void UpdateInitialPosition() => initialPosition = rectTransform.anchoredPosition;
@@ -69,6 +70,8 @@ public class RectTransformMover : MonoBehaviour
 		isGoingLeft = !isGoingLeft;
 		targetX = isGoingLeft ? width : -width;
 		currentDirection = -currentDirection;
+		
+		Invoke(nameof(DestroySelf), duration);
 	}
 
 	private void UpdateOffset(Vector2 currentPosition)
