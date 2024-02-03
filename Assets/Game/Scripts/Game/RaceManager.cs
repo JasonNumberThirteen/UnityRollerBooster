@@ -9,11 +9,13 @@ public class RaceManager : MonoBehaviour
 	public void PauseGame()
 	{
 		Time.timeScale = Time.timeScale == 1 ? 0 : 1;
-		
-		pauseMenuPanel.SetActive(Time.timeScale == 0);
+
+		SetPauseMenuPanelActive();
 	}
 
 	private void Awake() => CheckSingleton();
+	private void Start() => SetPauseMenuPanelActive();
+	private void SetPauseMenuPanelActive() => pauseMenuPanel.SetActive(Time.timeScale == 0);
 
 	private void CheckSingleton()
 	{
