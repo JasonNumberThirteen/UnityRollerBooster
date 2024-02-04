@@ -14,11 +14,11 @@ public class RaceManager : MonoBehaviour
 		SetPauseMenuPanelActive();
 	}
 
-	public void AbortRace()
+	public void AbortRace(string sceneName)
 	{
 		Time.timeScale = 1;
 		
-		sceneManager.LoadScene();
+		sceneManager.LoadScene(sceneName);
 	}
 
 	private void Awake() => CheckSingleton();

@@ -379,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 261947381755301652, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 261947381755301652, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
@@ -400,6 +400,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: RaceManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 261947381755301652, guid: 0efb182da2a33ab46a02cfac223dbb41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 261947381755301652, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
@@ -2825,7 +2830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be27bffe10391b4bad57f70d869159c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: MainMenu
 --- !u!4 &1636812176
 Transform:
   m_ObjectHideFlags: 0

@@ -1690,7 +1690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7be27bffe10391b4bad57f70d869159c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Game
 --- !u!4 &1507243922
 Transform:
   m_ObjectHideFlags: 0
@@ -2713,7 +2712,7 @@ PrefabInstance:
     - target: {fileID: 3390091283072128547, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3390091283072128547, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
@@ -2734,6 +2733,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MainMenuManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3390091283072128547, guid: 0efb182da2a33ab46a02cfac223dbb41,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Game
       objectReference: {fileID: 0}
     - target: {fileID: 3390091283072128547, guid: 0efb182da2a33ab46a02cfac223dbb41,
         type: 3}
