@@ -4,9 +4,9 @@ public class PlayerCollisionDetector : MonoBehaviour
 {
 	private void OnCollisionEnter(Collision collision)
 	{
-		if(collision.gameObject.TryGetComponent(out ICollisionEnter collidable))
+		if(collision.gameObject.TryGetComponent(out ICollisionEnter ce))
 		{
-			collidable.TriggerOnCollisionEnter(gameObject);
+			ce.TriggerOnCollisionEnter(gameObject);
 		}
 
 		if(gameObject.TryGetComponent(out PlayerMovement pm))
@@ -17,9 +17,9 @@ public class PlayerCollisionDetector : MonoBehaviour
 
 	private void OnCollisionExit(Collision collision)
 	{
-		if(collision.gameObject.TryGetComponent(out ICollisionExit reversibleCollision))
+		if(collision.gameObject.TryGetComponent(out ICollisionExit ce))
 		{
-			reversibleCollision.TriggerOnCollisionExit(gameObject);
+			ce.TriggerOnCollisionExit(gameObject);
 		}
 	}
 }
