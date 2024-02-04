@@ -1,18 +1,9 @@
-using TMPro;
-using UnityEngine;
-
-public class RaceTimerDecimalCounter : MonoBehaviour
+public class RaceTimerDecimalCounter : RaceTimerCounter
 {
-	public RaceTimer timer;
-
-	private TextMeshProUGUI counter;
-
-	private void Awake() => counter = GetComponent<TextMeshProUGUI>();
-
-	private void Update()
+	protected override string CounterText()
 	{
 		string text = string.Format("{0:F1}", timer.CurrentTime);
 
-		counter.text = text[^2..];
+		return text[^2..];
 	}
 }
