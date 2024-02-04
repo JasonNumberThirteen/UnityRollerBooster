@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Elevator : MonoBehaviour
+public class ElevatorMover : MonoBehaviour
 {
 	[Min(0.01f)] public float upMovementDuration, downMovementDuration, delay;
 	public float differenceY;
