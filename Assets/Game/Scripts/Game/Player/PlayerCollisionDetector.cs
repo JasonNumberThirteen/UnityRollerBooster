@@ -4,7 +4,7 @@ public class PlayerCollisionDetector : MonoBehaviour
 {
 	private void OnCollisionEnter(Collision collision)
 	{
-		if(collision.gameObject.TryGetComponent(out IColliderEnter collidable))
+		if(collision.gameObject.TryGetComponent(out ICollisionEnter collidable))
 		{
 			collidable.TriggerOnCollisionEnter(gameObject);
 		}

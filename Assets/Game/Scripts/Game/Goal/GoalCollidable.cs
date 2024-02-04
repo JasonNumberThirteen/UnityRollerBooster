@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GoalCollidable : MonoBehaviour, IColliderEnter
+public class GoalCollidable : MonoBehaviour, ICollisionEnter
 {
 	public void TriggerOnCollisionEnter(GameObject sender)
 	{

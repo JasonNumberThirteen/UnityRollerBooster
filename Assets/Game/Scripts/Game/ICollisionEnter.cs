@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IColliderEnter
+public interface ICollisionEnter
 {
 	void TriggerOnCollisionEnter(GameObject sender);
 }
