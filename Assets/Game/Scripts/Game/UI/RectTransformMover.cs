@@ -38,7 +38,7 @@ public class RectTransformMover : MonoBehaviour
 	{
 		Vector2 currentPosition = rectTransform.anchoredPosition;
 		float distance = Mathf.Abs(targetX - currentPosition.x);
-		float threshold = 2f;
+		float threshold = 3f;
 
 		if(distance > threshold)
 		{
@@ -68,7 +68,7 @@ public class RectTransformMover : MonoBehaviour
 		
 		reachedTarget = false;
 		isGoingLeft = !isGoingLeft;
-		targetX = isGoingLeft ? width : -width;
+		targetX = isGoingLeft ? -width : width;
 		currentDirection = -currentDirection;
 		
 		Invoke(nameof(DestroySelf), duration);
