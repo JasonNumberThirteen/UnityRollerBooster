@@ -12,7 +12,7 @@ public class RaceTimer : MonoBehaviour
 	{
 		if(CurrentTime > 0)
 		{
-			CurrentTime -= Time.deltaTime;
+			CurrentTime = Mathf.Clamp(CurrentTime - Time.deltaTime, 0, CurrentTime);
 		}
 	}
 }
