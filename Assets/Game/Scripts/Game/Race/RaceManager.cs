@@ -9,6 +9,8 @@ public class RaceManager : MonoBehaviour
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
 
+	public void SetRaceAsWon() => stateManager.SetAsWon();
+
 	public void SwitchPause()
 	{
 		if(stateManager.IsWon() || stateManager.IsOver())
