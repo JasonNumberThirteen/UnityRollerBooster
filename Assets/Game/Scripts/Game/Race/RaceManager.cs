@@ -4,6 +4,7 @@ public class RaceManager : MonoBehaviour
 {
 	public static RaceManager instance;
 
+	public RaceUIManager uiManager;
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
 
@@ -11,7 +12,7 @@ public class RaceManager : MonoBehaviour
 	{
 		Time.timeScale = Time.timeScale == 1 ? 0 : 1;
 
-		SetPauseMenuPanelActive();
+		uiManager.SetPauseMenuPanelActive();
 	}
 
 	public void AbortRace(string sceneName)
@@ -22,8 +23,6 @@ public class RaceManager : MonoBehaviour
 	}
 
 	private void Awake() => CheckSingleton();
-	private void Start() => SetPauseMenuPanelActive();
-	private void SetPauseMenuPanelActive() => pauseMenuPanel.SetActive(Time.timeScale == 0);
 
 	private void CheckSingleton()
 	{
