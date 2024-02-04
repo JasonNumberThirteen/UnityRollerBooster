@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7ffde98504f844d874dd786d1a7641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  raceStateManager: {fileID: 2117144680}
   initialTime: 60
 --- !u!1 &1215809286
 GameObject:

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class RaceTimer : MonoBehaviour
 {
+	public RaceStateManager raceStateManager;
 	[Min(0f)] public float initialTime;
 
 	public float CurrentTime {get; private set;}
@@ -12,7 +13,7 @@ public class RaceTimer : MonoBehaviour
 
 	private void Update()
 	{
-		if(TimeIsNotElapsed())
+		if(raceStateManager.IsStarted() && TimeIsNotElapsed())
 		{
 			ModifyTime();
 		}
