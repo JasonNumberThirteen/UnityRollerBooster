@@ -17,20 +17,18 @@ public class RaceManager : MonoBehaviour
 		}
 
 		stateManager.SwitchPauseState();
-		
-		Time.timeScale = stateManager.IsPaused() ? 0 : 1;
-
+		SetTimeScale(stateManager.IsPaused() ? 0 : 1);
 		uiManager.SetPauseMenuPanelActive();
 	}
 
 	public void AbortRace(string sceneName)
 	{
-		Time.timeScale = 1;
-		
+		SetTimeScale(1);
 		sceneManager.LoadScene(sceneName);
 	}
 
 	private void Awake() => CheckSingleton();
+	private void SetTimeScale(float scale) => Time.timeScale = scale;
 
 	private void CheckSingleton()
 	{
