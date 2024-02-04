@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameTimer : MonoBehaviour
+public class RaceTimer : MonoBehaviour
 {
 	[Min(0f)] public float initialTime;
 
