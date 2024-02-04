@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IReversibleCollision
+public interface ICollisionExit
 {
 	void TriggerOnCollisionExit(GameObject sender);
 }

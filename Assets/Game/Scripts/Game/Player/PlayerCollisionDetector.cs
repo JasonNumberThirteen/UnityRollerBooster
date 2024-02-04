@@ -17,7 +17,7 @@ public class PlayerCollisionDetector : MonoBehaviour
 
 	private void OnCollisionExit(Collision collision)
 	{
-		if(collision.gameObject.TryGetComponent(out IReversibleCollision reversibleCollision))
+		if(collision.gameObject.TryGetComponent(out ICollisionExit reversibleCollision))
 		{
 			reversibleCollision.TriggerOnCollisionExit(gameObject);
 		}
