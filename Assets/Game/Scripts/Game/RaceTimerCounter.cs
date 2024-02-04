@@ -8,5 +8,5 @@ public class RaceTimerCounter : MonoBehaviour
 	private TextMeshProUGUI counter;
 
 	private void Awake() => counter = GetComponent<TextMeshProUGUI>();
-	private void Update() => counter.text = string.Format("{0:F0}", timer.CurrentTime);
+	private void Update() => counter.text = Mathf.CeilToInt(timer.CurrentTime).ToString();
 }
