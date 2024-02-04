@@ -6,7 +6,7 @@ public class RaceManager : MonoBehaviour
 
 	public GameObject pauseMenuPanel;
 
-	public void PauseGame()
+	public void SwitchPause()
 	{
 		Time.timeScale = Time.timeScale == 1 ? 0 : 1;
 
