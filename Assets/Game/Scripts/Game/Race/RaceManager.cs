@@ -5,12 +5,20 @@ public class RaceManager : MonoBehaviour
 	public static RaceManager instance;
 
 	public RaceUIManager uiManager;
+	public RaceStateManager stateManager;
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
 
 	public void SwitchPause()
 	{
-		Time.timeScale = Time.timeScale == 1 ? 0 : 1;
+		if(stateManager.IsWon() || stateManager.IsOver())
+		{
+			return;
+		}
+
+		stateManager.SwitchPauseState();
+		
+		Time.timeScale = stateManager.IsActive() ? 0 : 1;
 
 		uiManager.SetPauseMenuPanelActive();
 	}

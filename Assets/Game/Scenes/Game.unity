@@ -1483,6 +1483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiManager: {fileID: 1047933886}
+  stateManager: {fileID: 2117144680}
   pauseMenuPanel: {fileID: 1393588488}
   sceneManager: {fileID: 1636812175}
 --- !u!4 &1215809288
