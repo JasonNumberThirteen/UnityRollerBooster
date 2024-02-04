@@ -4,15 +4,15 @@ public class RaceTimer : MonoBehaviour
 {
 	[Min(0f)] public float initialTime;
 
-	private float currentTime;
+	public float CurrentTime {get; private set;}
 
-	private void Start() => currentTime = initialTime;
+	private void Start() => CurrentTime = initialTime;
 
 	private void Update()
 	{
-		if(currentTime > 0)
+		if(CurrentTime > 0)
 		{
-			currentTime -= Time.deltaTime;
+			CurrentTime -= Time.deltaTime;
 		}
 	}
 }
