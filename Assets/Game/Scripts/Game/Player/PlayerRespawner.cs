@@ -11,26 +11,26 @@ public class PlayerRespawner : MonoBehaviour
 
 	public void RespawnByFall()
 	{
-		Vector3 hitPosition = transform.position;
-		
-		Instantiate(fracturedBall, hitPosition, Quaternion.identity);
+		Instantiate(fracturedBall, transform.position, Quaternion.identity);
 		Respawn();
 	}
 
 	public void Respawn()
 	{
-		transform.position = respawnPoint.position;
-		rb.isKinematic = true;
-
+		GoToRespawnPoint();
+		SetKinematicBody(true);
 		Invoke(nameof(DisableKinematicBody), freezeDuration);
 	}
 
 	private void Awake() => rb = GetComponent<Rigidbody>();
-	private void DisableKinematicBody() => rb.isKinematic = false;
+	private void DisableKinematicBody() => SetKinematicBody(false);
+	private void SetKinematicBody(bool isKinematic) => rb.isKinematic = isKinematic;
+	private void GoToRespawnPoint() => transform.position = respawnPoint.position;
+	private bool FallenOutsideOfArea() => transform.position.y <= minimumY;
 
 	private void Update()
 	{
-		if(transform.position.y <= minimumY)
+		if(FallenOutsideOfArea())
 		{
 			Respawn();
 		}
