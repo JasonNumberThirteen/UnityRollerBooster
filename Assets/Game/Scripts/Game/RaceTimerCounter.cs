@@ -4,7 +4,9 @@ using UnityEngine;
 public class RaceTimerCounter : MonoBehaviour
 {
 	public RaceTimer timer;
-	public TextMeshPro counter;
 
+	private TextMeshProUGUI counter;
+
+	private void Awake() => counter = GetComponent<TextMeshProUGUI>();
 	private void Update() => counter.text = string.Format("{0:F1}", timer.CurrentTime);
 }
