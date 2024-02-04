@@ -5,12 +5,20 @@ public class RaceManager : MonoBehaviour
 	public static RaceManager instance;
 
 	public GameObject pauseMenuPanel;
+	public GameSceneManager sceneManager;
 
 	public void SwitchPause()
 	{
 		Time.timeScale = Time.timeScale == 1 ? 0 : 1;
 
 		SetPauseMenuPanelActive();
+	}
+
+	public void AbortRace()
+	{
+		Time.timeScale = 1;
+		
+		sceneManager.LoadScene();
 	}
 
 	private void Awake() => CheckSingleton();
