@@ -18,7 +18,7 @@ public class RaceManager : MonoBehaviour
 
 		stateManager.SwitchPauseState();
 		SetTimeScale(stateManager.IsPaused() ? 0 : 1);
-		uiManager.SetPauseMenuPanelActive();
+		uiManager.ControlPauseMenuDisplay();
 	}
 
 	public void AbortRace(string sceneName)
