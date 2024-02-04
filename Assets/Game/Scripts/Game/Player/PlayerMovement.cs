@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if(velocityY <= -deathFallDistance)
 		{
-			respawner.Respawn();
+			respawner.RespawnByFall();
 		}
 		else if(velocityY <= -dizzyFallDistance)
 		{

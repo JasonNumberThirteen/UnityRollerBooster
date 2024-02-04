@@ -336,6 +336,8 @@ MonoBehaviour:
   respawnPoint: {fileID: 281406825}
   minimumY: -20
   freezeDuration: 1
+  fracturedBall: {fileID: 6108744346782473872, guid: 5ac2240f1190d6b468d80d91b0a4ff1d,
+    type: 3}
 --- !u!114 &6369968
 MonoBehaviour:
   m_ObjectHideFlags: 0
