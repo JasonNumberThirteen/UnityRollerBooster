@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class GoalCollidable : MonoBehaviour, ICollidable
+public class GoalCollidable : MonoBehaviour, IColliderEnter
 {
-	public void TriggerOnCollision(GameObject sender)
+	public void TriggerOnCollisionEnter(GameObject sender)
 	{
 		if(sender.TryGetComponent(out PlayerMovement pm))
 		{
