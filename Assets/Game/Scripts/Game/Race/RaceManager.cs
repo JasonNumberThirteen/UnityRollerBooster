@@ -18,7 +18,7 @@ public class RaceManager : MonoBehaviour
 
 		stateManager.SwitchPauseState();
 		
-		Time.timeScale = stateManager.IsActive() ? 0 : 1;
+		Time.timeScale = stateManager.IsPaused() ? 0 : 1;
 
 		uiManager.SetPauseMenuPanelActive();
 	}
