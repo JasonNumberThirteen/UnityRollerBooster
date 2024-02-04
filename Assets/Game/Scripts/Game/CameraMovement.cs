@@ -9,16 +9,22 @@ public class CameraMovement : MonoBehaviour
 	private Vector3 offset;
 	
 	private void Start() => offset = transform.position - target.transform.position;
+	private bool TargetMustBeTracked() => target.transform.position.y > minimumY;
 	
 	private void FixedUpdate()
 	{
-		if(target.transform.position.y <= minimumY)
+		if(TargetMustBeTracked())
 		{
-			return;
+			UpdatePosition();
 		}
-		
-		Vector3 lerpedPosition = Vector3.Lerp(transform.position, target.transform.position + offset, Time.fixedDeltaTime*speed);
+	}
 
-		transform.position = lerpedPosition;
+	private void UpdatePosition()
+	{
+		float t = Time.fixedDeltaTime*speed;
+		Vector3 targetPosition = target.transform.position + offset;
+		Vector3 newPosition = Vector3.Lerp(transform.position, targetPosition, t);
+
+		transform.position = newPosition;
 	}
 }
