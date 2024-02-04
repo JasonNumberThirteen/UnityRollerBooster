@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class CheckpointTriggerable : MonoBehaviour, ITriggerable
+public class CheckpointTriggerable : MonoBehaviour, ITriggerEnter
 {
 	public Transform respawnPoint;
 	
-	public void TriggerOnTrigger(GameObject sender)
+	public void TriggerOnTriggerEnter(GameObject sender)
 	{
 		if(sender.TryGetComponent(out PlayerRespawner pr))
 		{
