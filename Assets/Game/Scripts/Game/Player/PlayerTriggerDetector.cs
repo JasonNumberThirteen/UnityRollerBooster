@@ -4,9 +4,9 @@ public class PlayerTriggerDetector : MonoBehaviour
 {
 	private void OnTriggerEnter(Collider collider)
 	{
-		if(collider.gameObject.TryGetComponent(out ITriggerEnter triggerable))
+		if(collider.gameObject.TryGetComponent(out ITriggerEnter te))
 		{
-			triggerable.TriggerOnTriggerEnter(gameObject);
+			te.TriggerOnTriggerEnter(gameObject);
 		}
 	}
 }
