@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 		}
 		else if(velocityY <= -dizzyFallDistance)
 		{
+			rb.velocity = new Vector3(0, rb.velocity.y, 0);
 			currentSpeed *= dizzySpeedMultiplier;
 
 			Invoke(nameof(RestoreFullSpeed), dizzyDuration);
