@@ -19,6 +19,11 @@ public class CountdownTextManager : MonoBehaviour
 		{
 			DisplayNextText();
 		}
+		else
+		{
+			RaceManager.instance.StartRace();
+			Destroy(gameObject);
+		}
 	}
 
 	private void DisplayNextText()

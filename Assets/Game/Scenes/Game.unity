@@ -1607,6 +1607,7 @@ MonoBehaviour:
   stateManager: {fileID: 2117144680}
   pauseMenuPanel: {fileID: 1393588488}
   sceneManager: {fileID: 1636812175}
+  playerMovement: {fileID: 6369965}
 --- !u!4 &1215809288
 Transform:
   m_ObjectHideFlags: 0

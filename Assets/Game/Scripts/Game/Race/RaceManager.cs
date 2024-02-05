@@ -8,6 +8,7 @@ public class RaceManager : MonoBehaviour
 	public RaceStateManager stateManager;
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
+	public PlayerMovement playerMovement;
 
 	public void SetRaceAsWon() => stateManager.SetAsWon();
 
@@ -27,6 +28,13 @@ public class RaceManager : MonoBehaviour
 	{
 		SetTimeScale(1);
 		sceneManager.LoadScene(sceneName);
+	}
+
+	public void StartRace()
+	{
+		stateManager.SetAsActive();
+		
+		playerMovement.enabled = true;
 	}
 
 	private void Awake() => CheckSingleton();
