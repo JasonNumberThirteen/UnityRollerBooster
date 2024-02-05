@@ -9,12 +9,14 @@ public class RaceManager : MonoBehaviour
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
 	public PlayerMovement playerMovement;
+	public PlayerRespawner playerRespawner;
 
 	public void SetRaceAsWon()
 	{
 		stateManager.SetAsWon();
 
 		playerMovement.enabled = false;
+		playerRespawner.enabled = false;
 	}
 
 	public void SwitchPause()
