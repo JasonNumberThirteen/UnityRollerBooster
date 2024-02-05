@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74395dc0374277409ce12311a3363de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 0.5
   targetSize: {x: 420, y: 132}
 --- !u!1001 &197405864
 PrefabInstance:
