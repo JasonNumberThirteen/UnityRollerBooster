@@ -6,11 +6,6 @@ public class GoalCollidable : MonoBehaviour, ICollisionEnter
 	{
 		RaceManager.instance.SetRaceAsWon();
 		
-		if(sender.TryGetComponent(out PlayerMovement pm))
-		{
-			pm.enabled = false;
-		}
-
 		if(TryGetComponent(out GoalRenderer gr))
 		{
 			gr.ChangeMaterial();

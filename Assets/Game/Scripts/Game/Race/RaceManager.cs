@@ -10,7 +10,12 @@ public class RaceManager : MonoBehaviour
 	public GameSceneManager sceneManager;
 	public PlayerMovement playerMovement;
 
-	public void SetRaceAsWon() => stateManager.SetAsWon();
+	public void SetRaceAsWon()
+	{
+		stateManager.SetAsWon();
+
+		playerMovement.enabled = false;
+	}
 
 	public void SwitchPause()
 	{
@@ -33,7 +38,7 @@ public class RaceManager : MonoBehaviour
 	public void StartRace()
 	{
 		stateManager.SetAsActive();
-		
+
 		playerMovement.enabled = true;
 	}
 
