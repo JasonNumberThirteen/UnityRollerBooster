@@ -1369,7 +1369,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-69912
+  m_Name: pb_Mesh-2062
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1859,6 +1859,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270137573}
   m_CullTransparentMesh: 1
+--- !u!1 &1348411140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348411142}
+  - component: {fileID: 1348411141}
+  m_Layer: 0
+  m_Name: Countdown Text Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1348411141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348411140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6402561fb63fe8479f0b4ef25ac0386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texts:
+  - texture: {fileID: 2800000, guid: 0a8d9e2c982cfcd4380cb646da7af778, type: 3}
+    targetSize: {x: 420, y: 132}
+    duration: 1
+  - texture: {fileID: 2800000, guid: 53610f6e30fbcb5438813309d58bc1e8, type: 3}
+    targetSize: {x: 272, y: 136}
+    duration: 1
+  - texture: {fileID: 2800000, guid: 8a8446d1fa5d317439c30eda4d6f0c49, type: 3}
+    targetSize: {x: 190, y: 126}
+    duration: 2
+  textScaler: {fileID: 144841595}
+--- !u!4 &1348411142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348411140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392711639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,7 +2760,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-69894
+  m_Name: pb_Mesh-2044
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3339,7 +3394,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh45132
+  m_Name: pb_Mesh29984
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
