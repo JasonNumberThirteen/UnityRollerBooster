@@ -19,6 +19,14 @@ public class RaceManager : MonoBehaviour
 		playerRespawner.enabled = false;
 	}
 
+	public void SetRaceAsOver()
+	{
+		stateManager.SetAsOver();
+
+		playerMovement.enabled = false;
+		playerRespawner.enabled = false;
+	}
+
 	public void SwitchPause()
 	{
 		if(stateManager.IsWon() || stateManager.IsOver())

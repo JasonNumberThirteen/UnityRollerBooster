@@ -13,9 +13,16 @@ public class RaceTimer : MonoBehaviour
 
 	private void Update()
 	{
-		if(raceStateManager.IsStarted() && TimeIsNotElapsed())
+		if(raceStateManager.IsStarted())
 		{
-			ModifyTime();
+			if(TimeIsNotElapsed())
+			{
+				ModifyTime();
+			}
+			else
+			{
+				RaceManager.instance.SetRaceAsOver();
+			}
 		}
 	}
 }
