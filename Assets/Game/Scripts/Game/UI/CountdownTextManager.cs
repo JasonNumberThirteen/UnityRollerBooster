@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CountdownTextManager : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class CountdownTextManager : MonoBehaviour
 		durationTimer = currentText.duration;
 
 		textScaler.ResetText(currentText.texture);
+		currentText.onDisplay.Invoke();
 	}
 
 	private void Start() => DisplayNextText();
@@ -45,4 +47,5 @@ public class CountdownText
 	public Texture texture;
 	public Vector2 targetSize;
 	[Min(0.01f)] public float duration;
+	public UnityEvent onDisplay;
 }

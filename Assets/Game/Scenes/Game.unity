@@ -491,11 +491,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144841589}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7b17523fded59346b6bc90ccd66948e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 1
   oscillation: 10
   periodOfOscillation: 0.1
 --- !u!1001 &197405864
@@ -1908,12 +1909,33 @@ MonoBehaviour:
   - texture: {fileID: 2800000, guid: 0a8d9e2c982cfcd4380cb646da7af778, type: 3}
     targetSize: {x: 420, y: 132}
     duration: 1
+    onDisplay:
+      m_PersistentCalls:
+        m_Calls: []
   - texture: {fileID: 2800000, guid: 53610f6e30fbcb5438813309d58bc1e8, type: 3}
     targetSize: {x: 272, y: 136}
     duration: 1
+    onDisplay:
+      m_PersistentCalls:
+        m_Calls: []
   - texture: {fileID: 2800000, guid: 8a8446d1fa5d317439c30eda4d6f0c49, type: 3}
     targetSize: {x: 190, y: 126}
     duration: 2
+    onDisplay:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 144841596}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   textScaler: {fileID: 144841595}
 --- !u!4 &1348411142
 Transform:
