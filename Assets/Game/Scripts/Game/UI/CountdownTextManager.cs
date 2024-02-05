@@ -22,6 +22,7 @@ public class CountdownTextManager : MonoBehaviour
 		else
 		{
 			RaceManager.instance.StartRace();
+			Destroy(textScaler.gameObject);
 			Destroy(gameObject);
 		}
 	}
