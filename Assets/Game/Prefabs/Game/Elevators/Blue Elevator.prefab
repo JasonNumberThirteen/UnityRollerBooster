@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 2942037795088374855}
   - component: {fileID: 6286047098721431538}
   - component: {fileID: 8795773527179855637}
+  - component: {fileID: 5624173384992718474}
   m_Layer: 0
   m_Name: Blue Elevator
   m_TagString: Untagged
@@ -708,3 +709,15 @@ MonoBehaviour:
   downMovementDuration: 2
   delay: 1
   differenceY: 3
+--- !u!114 &5624173384992718474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808158744049090530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee837a1332cfcd542ac2b78eb9af8510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
