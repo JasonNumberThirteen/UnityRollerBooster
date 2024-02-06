@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 1035405703}
   - component: {fileID: 1035405702}
   - component: {fileID: 1035405708}
+  - component: {fileID: 1035405709}
   m_Layer: 0
   m_Name: Rotating Platform
   m_TagString: Untagged
@@ -1310,6 +1311,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 94
   m_CollisionDetection: 0
+--- !u!114 &1035405709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035405701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e719a4c834976cf4fb316a7252077b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 100
 --- !u!1 &1047933885
 GameObject:
   m_ObjectHideFlags: 0
