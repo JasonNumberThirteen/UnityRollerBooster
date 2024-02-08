@@ -31,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5159035752097083264}
-  - {fileID: 1734113651205266474}
+  - {fileID: 7737649853188711251}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -236,8 +236,12 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7440223918524098481}
+    - targetCorrespondingSourceObject: {fileID: 1505863483430483494, guid: a61e05cb008a1bb4bbcb827d8a261577,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8554501088676522299}
   m_SourcePrefab: {fileID: 100100000, guid: a61e05cb008a1bb4bbcb827d8a261577, type: 3}
---- !u!1 &1734113651205266473 stripped
+--- !u!1 &933698615197952526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1505863483430483494, guid: a61e05cb008a1bb4bbcb827d8a261577,
     type: 3}
@@ -249,14 +253,30 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734113651205266473}
+  m_GameObject: {fileID: 933698615197952526}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3598dabbad103f04eb7c3e3381a4cc0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
---- !u!224 &1734113651205266474 stripped
+--- !u!114 &8554501088676522299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933698615197952526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e96fe4c4a29fc418b80ba3c35f2801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  blinkColor: {r: 1, g: 0, b: 0, a: 1}
+  blinkThreshold: 10
+  blinkDuration: 0.5
+--- !u!224 &7737649853188711251 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8318545049903464315, guid: a61e05cb008a1bb4bbcb827d8a261577,
     type: 3}
@@ -418,6 +438,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4950865895654612395}
+    - targetCorrespondingSourceObject: {fileID: 1505863483430483494, guid: a61e05cb008a1bb4bbcb827d8a261577,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5965286318514035111}
   m_SourcePrefab: {fileID: 100100000, guid: a61e05cb008a1bb4bbcb827d8a261577, type: 3}
 --- !u!1 &2309253509243348701 stripped
 GameObject:
@@ -438,6 +462,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
+--- !u!114 &5965286318514035111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309253509243348701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e96fe4c4a29fc418b80ba3c35f2801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 0}
+  blinkColor: {r: 1, g: 0, b: 0, a: 1}
+  blinkThreshold: 10
+  blinkDuration: 0.5
 --- !u!224 &5159035752097083264 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8318545049903464315, guid: a61e05cb008a1bb4bbcb827d8a261577,
