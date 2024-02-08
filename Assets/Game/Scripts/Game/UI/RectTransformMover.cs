@@ -11,17 +11,19 @@ public class RectTransformMover : MonoBehaviour
 	private Vector2 initialPosition;
 	private float targetX = 0;
 	private bool reachedTarget = false, isGoingLeft;
-	private int currentDirection = 1;
 
 	private void DestroySelf() => Destroy(gameObject);
 	private void Awake() => rectTransform = GetComponent<RectTransform>();
 	private float DifferenceX() => Mathf.Abs(targetX - initialPosition.x);
 	private void UpdateInitialPosition() => initialPosition = rectTransform.anchoredPosition;
+	private bool ReachedTargetPosition() => rectTransform.anchoredPosition == TargetPosition();
+	private Vector2 TargetPosition() => new Vector2(targetX, rectTransform.anchoredPosition.y);
+	private void SetReachedTarget(bool reached) => reachedTarget = reached;
+	private void SetGoingLeft(bool goingLeft) => isGoingLeft = goingLeft;
 
 	private void Start()
 	{
-		isGoingLeft = startFromLeft;
-		
+		SetGoingLeft(startFromLeft);
 		AssignStartingOffset();
 		UpdateInitialPosition();
 	}
@@ -36,22 +38,32 @@ public class RectTransformMover : MonoBehaviour
 
 	private void Update()
 	{
-		Vector2 currentPosition = rectTransform.anchoredPosition;
-		float distance = Mathf.Abs(targetX - currentPosition.x);
-		float threshold = 3f;
-
-		if(distance > threshold)
+		if(!ReachedTargetPosition())
 		{
-			UpdateOffset(currentPosition);
+			UpdatePosition();
 		}
 		else if(!reachedTarget)
 		{
-			reachedTarget = true;
-			
+			SetReachedTarget(true);
 			UpdateInitialPosition();
 			ResetPosition();
 			Invoke(nameof(ChangeTarget), delayBetweenTransitions);
 		}
+	}
+
+	private void UpdatePosition()
+	{
+		Vector2 target = TargetPosition();
+		float t = SpeedPerFrame();
+		
+		rectTransform.anchoredPosition = Vector2.MoveTowards(rectTransform.anchoredPosition, target, t);
+	}
+
+	private float SpeedPerFrame()
+	{
+		float speed = DifferenceX() / duration;
+		
+		return speed*Time.deltaTime;
 	}
 
 	private void ResetPosition()
@@ -64,28 +76,16 @@ public class RectTransformMover : MonoBehaviour
 
 	private void ChangeTarget()
 	{
-		float width = canvasScaler.referenceResolution.x;
-		
-		reachedTarget = false;
-		isGoingLeft = !isGoingLeft;
-		targetX = isGoingLeft ? -width : width;
-		currentDirection = -currentDirection;
-		
+		SetReachedTarget(false);
+		SetGoingLeft(!isGoingLeft);
+		UpdateTarget();
 		Invoke(nameof(DestroySelf), duration);
 	}
 
-	private void UpdateOffset(Vector2 currentPosition)
+	private void UpdateTarget()
 	{
-		int direction = isGoingLeft ? 1 : -1;
+		float width = canvasScaler.referenceResolution.x;
 		
-		currentPosition.x += ValuePerFrame()*direction*currentDirection;
-		rectTransform.anchoredPosition = currentPosition;
-	}
-
-	private float ValuePerFrame()
-	{
-		float speed = DifferenceX() / duration;
-		
-		return speed*Time.deltaTime;
+		targetX = isGoingLeft ? -width : width;
 	}
 }
