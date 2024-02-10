@@ -12,6 +12,8 @@ public class TrapdoorCollidable : MonoBehaviour, ICollisionEnter
 
 			jointLimits.min = minimumHingeJointAngle;
 			hj.limits = jointLimits;
+
+			Destroy(this);
 		}
 	}
 }
