@@ -810,7 +810,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-211554
+  m_Name: pb_Mesh40372
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1684,6 +1684,7 @@ GameObject:
   - component: {fileID: 1174830334}
   - component: {fileID: 1174830333}
   - component: {fileID: 1174830332}
+  - component: {fileID: 1174830339}
   m_Layer: 0
   m_Name: Left Door
   m_TagString: Untagged
@@ -2087,6 +2088,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &1174830339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174830330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2037a4a8a1f33dd41bb6af02e625f826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumHingeJointAngle: -90
 --- !u!1 &1181947974
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,7 +4075,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3672
+  m_Name: pb_Mesh40264
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4236,6 +4250,7 @@ GameObject:
   - component: {fileID: 1944376951}
   - component: {fileID: 1944376950}
   - component: {fileID: 1944376949}
+  - component: {fileID: 1944376957}
   m_Layer: 0
   m_Name: Right Door
   m_TagString: Untagged
@@ -4639,6 +4654,19 @@ Transform:
   m_Father: {fileID: 35261612}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944376957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944376948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2037a4a8a1f33dd41bb6af02e625f826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumHingeJointAngle: 90
 --- !u!1 &2117144679
 GameObject:
   m_ObjectHideFlags: 0
