@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcac909609615154088969dd4015ed21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 8
   dizzySpeedMultiplier: 0.5
   dizzyDuration: 2
   dizzyFallDistance: 5
