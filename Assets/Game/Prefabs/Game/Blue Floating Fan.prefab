@@ -827,6 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushForce: {x: 0, y: 20, z: 0}
+  drag: 2
 --- !u!1001 &2184692224899490102
 PrefabInstance:
   m_ObjectHideFlags: 0
