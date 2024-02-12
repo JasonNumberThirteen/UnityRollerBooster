@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 6369960}
   - component: {fileID: 6369959}
   - component: {fileID: 6369963}
+  - component: {fileID: 6369970}
   - component: {fileID: 6369964}
   - component: {fileID: 6369968}
   - component: {fileID: 6369966}
@@ -363,6 +364,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c39693cf69ac247a2fde3353c3cbf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!75 &6369970
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6369958}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &75237193
 GameObject:
   m_ObjectHideFlags: 0
