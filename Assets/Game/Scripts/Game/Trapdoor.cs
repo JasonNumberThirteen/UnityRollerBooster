@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class TrapdoorCollidable : MonoBehaviour, ICollisionEnter
+public class Trapdoor : MonoBehaviour
 {
 	public float minimumHingeJointAngle;
 
-	public void TriggerOnCollisionEnter(GameObject sender)
+	public void Unlock(GameObject sender)
 	{
 		if(TryGetComponent(out HingeJoint hj))
 		{
