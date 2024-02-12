@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4056173095727652650}
   - component: {fileID: 2043782467982141525}
   - component: {fileID: 7879384346564721677}
+  - component: {fileID: 1178092036009373722}
   m_Layer: 0
   m_Name: Floating Fan
   m_TagString: Untagged
@@ -776,6 +777,18 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1178092036009373722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115863085068577196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2138ee41abf09474ba0b2f5ef6fd10bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2184692224899490102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,7 +800,7 @@ PrefabInstance:
     - target: {fileID: 1020321727236460489, guid: 95112f13669a28b4ea781a0f10811288,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1020321727236460489, guid: 95112f13669a28b4ea781a0f10811288,
         type: 3}
