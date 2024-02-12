@@ -7,6 +7,8 @@
 * [General information](#general-information)
 * [Used technologies](#used-technologies)
 * [Usage](#usage)
+* [Differences](#differences)
+* [Project status](#project-status)
 * [Credits](#credits)
 
 ## General information
@@ -27,5 +29,15 @@
 - W / S / A / D - **Movement**
 - Esc - **Pause**
 
+## Differences
+The game **has some important differences** compared to the original, both visually and functionally. Please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRumbleInTheFactory/wiki/Differences-to-the-original-game "Differences to the original game") to display detailed information.
+
+## Project status
+<p align = "center"><b>IN PROGRESS</b></p>
+<p align = "center"><img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Gasr25percent.png"/></p>
+
+---
+**The project is completed in ~25%**. It still requires fixes, optimisations and upgrades. For more information about left tasks to complete, please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRollerBooster/wiki/Project-status "Project status").
+
 ## Credits
-- This project was made by [Jason](https://jasonxiii.pl "Jason. Cała informatyka w jednym miejscu! Oficjalna strona internetowa! Setki artykułów na różne tematy! Wszystko stworzone przez jedną osobę!")
+- This project was made by [Jason](https://jasonxiii.pl "Jason. Cała informatyka w jednym miejscu! Oficjalna strona internetowa! Setki artykułów na różne tematy! Wszystko stworzone przez jedną osobę!").
