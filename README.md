@@ -30,7 +30,7 @@
 - Esc - **Pause**
 
 ## Differences
-The game **has some important differences** compared to the original, both visually and functionally. Please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRumbleInTheFactory/wiki/Differences-to-the-original-game "Differences to the original game") to display detailed information.
+The game **has some important differences** compared to the original, both visually and functionally. Please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRollerBooster/wiki/Differences-to-the-original-game "Differences to the original game") to display detailed information.
 
 ## Project status
 <p align = "center"><b>IN PROGRESS</b></p>
