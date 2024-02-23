@@ -1507,7 +1507,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 909507908}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7506983578832722605, guid: 7b3e1e494cede1b48a82064622ee6425, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14103,7 +14104,8 @@ PrefabInstance:
       propertyPath: downMovementDuration
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5624173384992718474, guid: f6c541a7c4e0f124481a9a50b7542d06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -16651,7 +16653,8 @@ PrefabInstance:
       propertyPath: downMovementDuration
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5624173384992718474, guid: f6c541a7c4e0f124481a9a50b7542d06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -18257,7 +18260,8 @@ PrefabInstance:
       propertyPath: downMovementDuration
       value: 1.75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5624173384992718474, guid: f6c541a7c4e0f124481a9a50b7542d06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -42704,7 +42708,8 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 674709498}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7506983578832722605, guid: 7b3e1e494cede1b48a82064622ee6425, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -44568,7 +44573,8 @@ PrefabInstance:
       propertyPath: downMovementDuration
       value: 0.75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5624173384992718474, guid: f6c541a7c4e0f124481a9a50b7542d06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -64576,7 +64582,8 @@ PrefabInstance:
       propertyPath: downMovementDuration
       value: 2.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5624173384992718474, guid: f6c541a7c4e0f124481a9a50b7542d06, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
