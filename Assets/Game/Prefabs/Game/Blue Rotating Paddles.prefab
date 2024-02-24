@@ -301,7 +301,7 @@ MonoBehaviour:
       m_SwapUV: 0
       m_Fill: 1
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 0.033, y: 0.125}
+      m_Offset: {x: 0.033, y: 0.375}
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
@@ -318,7 +318,7 @@ MonoBehaviour:
       m_SwapUV: 0
       m_Fill: 1
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -0.033, y: 0.125}
+      m_Offset: {x: -0.033, y: 0.375}
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
@@ -369,7 +369,7 @@ MonoBehaviour:
       m_SwapUV: 0
       m_Fill: 1
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: 0.033, y: 0.125}
+      m_Offset: {x: 0.033, y: 0.375}
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
@@ -386,7 +386,7 @@ MonoBehaviour:
       m_SwapUV: 0
       m_Fill: 1
       m_Scale: {x: 1, y: 1}
-      m_Offset: {x: -0.033, y: 0.125}
+      m_Offset: {x: -0.033, y: 0.375}
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
@@ -727,14 +727,14 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
-  - {x: -0.24950635, y: 0.5}
-  - {x: -0.24950635, y: 0}
-  - {x: -1.2495064, y: 0.5}
-  - {x: -1.2495064, y: 0}
-  - {x: 0.24950635, y: 0}
-  - {x: 0.24950635, y: 0.5}
-  - {x: 1.2495064, y: 0}
-  - {x: 1.2495064, y: 0.5}
+  - {x: -0.24950635, y: 0.25}
+  - {x: -0.24950635, y: -0.25}
+  - {x: -1.2495064, y: 0.25}
+  - {x: -1.2495064, y: -0.25}
+  - {x: 0.24950635, y: -0.25}
+  - {x: 0.24950635, y: 0.25}
+  - {x: 1.2495064, y: -0.25}
+  - {x: 1.2495064, y: 0.25}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
@@ -743,14 +743,14 @@ MonoBehaviour:
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
-  - {x: -0.24950635, y: 0.5}
-  - {x: -0.24950635, y: 0}
-  - {x: -1.2495064, y: 0.5}
-  - {x: -1.2495064, y: 0}
-  - {x: 0.24950635, y: 0}
-  - {x: 0.24950635, y: 0.5}
-  - {x: 1.2495064, y: 0}
-  - {x: 1.2495064, y: 0.5}
+  - {x: -0.24950635, y: 0.25}
+  - {x: -0.24950635, y: -0.25}
+  - {x: -1.2495064, y: 0.25}
+  - {x: -1.2495064, y: -0.25}
+  - {x: 0.24950635, y: -0.25}
+  - {x: 0.24950635, y: 0.25}
+  - {x: 1.2495064, y: -0.25}
+  - {x: 1.2495064, y: 0.25}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
   - {x: 0, y: 0}
@@ -886,7 +886,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 2730
+  m_VersionIndex: 2771
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
