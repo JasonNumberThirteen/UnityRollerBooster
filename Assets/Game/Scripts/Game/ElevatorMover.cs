@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class ElevatorMover : MonoBehaviour
 {
-	[Min(0.01f)] public float upMovementDuration, downMovementDuration, delay;
+	[Min(0.01f)] public float upMovementDuration, downMovementDuration;
+	[Min(0f)] public float delay;
 	public float differenceY;
 
 	private Vector3 initialPosition, targetPosition;
