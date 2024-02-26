@@ -6,17 +6,19 @@ public class HostileBallMover : MonoBehaviour
 {
 	[Min(0f)] public float speed = 10f;
 	[Min(0.1f)] public float distanceTolerance = 1f;
+
+	public Transform Target {get; set;}
 	
 	private Rigidbody rb;
 	private int pathPointIndex = 0;
 	private bool changedTarget = false;
 	private HostileBallPatrolPathBuilder patrolPathBuilder;
 
-	private void Start() => SetInitialPosition();
 	private void SetInitialPosition() => transform.position = CurrentPathPointPosition();
+	private void UpdateTargetAsNextPathPoint() => Target = patrolPathBuilder.Path[pathPointIndex];
 	private Vector3 CurrentPathPointPosition() => patrolPathBuilder.Path[pathPointIndex].position;
-	private Vector3 PositionHeading(Vector3 position) => (position - transform.position).normalized;
-	private bool ReachedPosition(Vector3 position) => Vector3.Distance(transform.position, position) <= distanceTolerance;
+	private Vector3 PositionHeading() => (Target.position - transform.position).normalized;
+	private bool ReachedPosition() => Vector3.Distance(transform.position, Target.position) <= distanceTolerance;
 
 	private void Awake()
 	{
@@ -24,13 +26,17 @@ public class HostileBallMover : MonoBehaviour
 		patrolPathBuilder = GetComponent<HostileBallPatrolPathBuilder>();
 	}
 
+	private void Start()
+	{
+		SetInitialPosition();
+		UpdateTargetAsNextPathPoint();
+	}
+
 	private void FixedUpdate()
 	{
-		Vector3 target = CurrentPathPointPosition();
-		
-		if(!ReachedPosition(target))
+		if(!ReachedPosition())
 		{
-			AddForceTowardsPosition(target);
+			AddForceTowardsTarget();
 			DisableTargetChange();
 		}
 		else if(!changedTarget)
@@ -39,9 +45,9 @@ public class HostileBallMover : MonoBehaviour
 		}
 	}
 
-	private void AddForceTowardsPosition(Vector3 position)
+	private void AddForceTowardsTarget()
 	{
-		Vector3 heading = PositionHeading(position);
+		Vector3 heading = PositionHeading();
 
 		rb.AddForce(heading*speed);
 	}
@@ -58,5 +64,7 @@ public class HostileBallMover : MonoBehaviour
 	{
 		pathPointIndex = (pathPointIndex + 1) % patrolPathBuilder.amountOfPoints;
 		changedTarget = true;
+
+		UpdateTargetAsNextPathPoint();
 	}
 }
