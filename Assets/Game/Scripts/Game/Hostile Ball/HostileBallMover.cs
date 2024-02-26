@@ -11,12 +11,20 @@ public class HostileBallMover : MonoBehaviour
 
 	private void Awake() => rb = GetComponent<Rigidbody>();
 	private void FixedUpdate() => AddForceTowardsTarget();
-	private Vector3 PositionHeading() => (Target.position - transform.position).normalized;
 
 	private void AddForceTowardsTarget()
 	{
 		Vector3 heading = PositionHeading();
 
 		rb.AddForce(heading*speed);
+	}
+
+	private Vector3 PositionHeading()
+	{
+		Vector3 vector = Target.position - transform.position;
+
+		vector.y = 0;
+
+		return vector.normalized;
 	}
 }
