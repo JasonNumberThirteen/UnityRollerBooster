@@ -11,7 +11,6 @@ public class HostileBallPatrolPathMovementController : MonoBehaviour
 	private HostileBallMover mover;
 	private HostileBallPatrolPathBuilder patrolPathBuilder;
 	
-	private void OnEnable() => UpdateTargetAsNextPathPoint();
 	private void SetInitialPosition() => transform.position = CurrentPathPointPosition();
 	private void UpdateTargetAsNextPathPoint() => mover.Target = patrolPathBuilder.Path[pathPointIndex];
 	private Vector3 CurrentPathPointPosition() => patrolPathBuilder.Path[pathPointIndex].position;
@@ -28,7 +27,7 @@ public class HostileBallPatrolPathMovementController : MonoBehaviour
 		SetInitialPosition();
 		UpdateTargetAsNextPathPoint();
 	}
-
+	
 	private void FixedUpdate()
 	{
 		if(!ReachedPosition())
@@ -54,6 +53,13 @@ public class HostileBallPatrolPathMovementController : MonoBehaviour
 		pathPointIndex = (pathPointIndex + 1) % patrolPathBuilder.amountOfPoints;
 		changedTarget = true;
 
+		UpdateTargetAsNextPathPoint();
+	}
+
+	private void OnEnable()
+	{
+		pathPointIndex = 0;
+		
 		UpdateTargetAsNextPathPoint();
 	}
 }
