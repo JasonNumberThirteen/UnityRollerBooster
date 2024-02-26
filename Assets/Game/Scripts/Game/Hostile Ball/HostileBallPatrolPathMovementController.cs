@@ -11,6 +11,7 @@ public class HostileBallPatrolPathMovementController : MonoBehaviour
 	private HostileBallMover mover;
 	private HostileBallPatrolPathBuilder patrolPathBuilder;
 	
+	private void OnEnable() => UpdateTargetAsNextPathPoint();
 	private void SetInitialPosition() => transform.position = CurrentPathPointPosition();
 	private void UpdateTargetAsNextPathPoint() => mover.Target = patrolPathBuilder.Path[pathPointIndex];
 	private Vector3 CurrentPathPointPosition() => patrolPathBuilder.Path[pathPointIndex].position;
