@@ -2410,6 +2410,8 @@ GameObject:
   - component: {fileID: 151556737}
   - component: {fileID: 151556742}
   - component: {fileID: 151556743}
+  - component: {fileID: 151556745}
+  - component: {fileID: 151556744}
   m_Layer: 0
   m_Name: Hostile Ball
   m_TagString: Untagged
@@ -2543,7 +2545,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100
-  distanceTolerance: 1
 --- !u!114 &151556743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2559,6 +2560,33 @@ MonoBehaviour:
   patrolPoint: {fileID: 1536288989}
   amountOfPoints: 16
   radius: 3
+--- !u!114 &151556744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151556736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a7ae158cfe4364ca67a6d790f4abeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6369962}
+  detectionDistance: 3
+--- !u!114 &151556745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151556736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e3211150305b146aa089141f5f0529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceTolerance: 1
 --- !u!1001 &197405864
 PrefabInstance:
   m_ObjectHideFlags: 0
