@@ -8,7 +8,7 @@ public class HostileBallPatrolPathBuilder : MonoBehaviour
 
 	public Transform[] Path {get; private set;}
 
-	private void Start() => GeneratePointsAroundPatrolPoint();
+	private void Awake() => GeneratePointsAroundPatrolPoint();
 
 	private void GeneratePointsAroundPatrolPoint()
 	{
