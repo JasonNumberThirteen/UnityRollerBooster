@@ -2408,6 +2408,7 @@ GameObject:
   - component: {fileID: 151556739}
   - component: {fileID: 151556738}
   - component: {fileID: 151556737}
+  - component: {fileID: 151556742}
   m_Layer: 0
   m_Name: Hostile Ball
   m_TagString: Untagged
@@ -2528,6 +2529,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &151556742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151556736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628c172cf6b7d0b44a47b61f2e44bcf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoint: {fileID: 1536288989}
+  amountOfPoints: 16
+  speed: 100
+  radius: 3
+  distanceTolerance: 1
 --- !u!1001 &197405864
 PrefabInstance:
   m_ObjectHideFlags: 0
