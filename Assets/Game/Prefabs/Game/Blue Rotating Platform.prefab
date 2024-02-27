@@ -146,7 +146,7 @@ MonoBehaviour:
       m_FlipV: 0
       m_SwapUV: 0
       m_Fill: 1
-      m_Scale: {x: 1, y: 1}
+      m_Scale: {x: 0, y: 0}
       m_Offset: {x: 0, y: 0}
       m_Rotation: 0
       m_Anchor: 9
@@ -211,10 +211,10 @@ MonoBehaviour:
   - {x: 0.75, y: 2.25}
   - {x: -0.75, y: -2.25}
   - {x: 0.75, y: -2.25}
-  - {x: 0.75, y: -2.25}
-  - {x: -0.75, y: -2.25}
-  - {x: 0.75, y: 2.25}
-  - {x: -0.75, y: 2.25}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
+  - {x: 0, y: 0}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -238,10 +238,10 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
-  - {x: -1, y: 0, z: 0, w: -1}
+  - {x: 1, y: 0, z: 0, w: 1}
+  - {x: 1, y: 0, z: 0, w: 1}
+  - {x: 1, y: 0, z: 0, w: 1}
+  - {x: 1, y: 0, z: 0, w: 1}
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88
@@ -251,11 +251,19 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 6002
+  m_VersionIndex: 6028
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 05000000
+  m_SelectedEdges:
+  - a: 20
+    b: 21
+  - a: 22
+    b: 20
+  - a: 21
+    b: 23
+  - a: 23
+    b: 22
+  m_SelectedVertices: 14000000150000001600000017000000
 --- !u!114 &15401090164884637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,7 +324,7 @@ MeshRenderer:
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
   m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
+  m_SelectedEditorRenderState: 2
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
