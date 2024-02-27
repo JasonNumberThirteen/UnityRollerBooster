@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88920f656c1ccf34a837a65fc2119850, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trapdoors:
+  activators:
   - {fileID: 5409604860556115249}
   - {fileID: 2811890344561908420}
 --- !u!1 &6010914146376328286
