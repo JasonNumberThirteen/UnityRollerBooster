@@ -4,7 +4,7 @@ public class TrapdoorActivator : MonoBehaviour
 {
 	public float minimumHingeJointAngle;
 
-	public void Unlock(GameObject sender)
+	public void Activate(GameObject sender)
 	{
 		if(TryGetComponent(out HingeJoint hj))
 		{

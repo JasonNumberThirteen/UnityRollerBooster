@@ -8,7 +8,7 @@ public class TrapdoorTriggerable : MonoBehaviour, ITriggerEnter
 	{
 		foreach (TrapdoorActivator activator in activators)
 		{
-			activator.Unlock(sender);
+			activator.Activate(sender);
 		}
 	}
 }
