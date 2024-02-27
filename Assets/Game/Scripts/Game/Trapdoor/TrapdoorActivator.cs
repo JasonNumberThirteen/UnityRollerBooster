@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Trapdoor : MonoBehaviour
+public class TrapdoorActivator : MonoBehaviour
 {
 	public float minimumHingeJointAngle;
 

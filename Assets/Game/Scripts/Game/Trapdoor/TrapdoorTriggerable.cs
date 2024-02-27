@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class TrapdoorTriggerable : MonoBehaviour, ITriggerEnter
 {
-	public Trapdoor[] trapdoors;
+	public TrapdoorActivator[] activators;
 	
 	public void TriggerOnTriggerEnter(GameObject sender)
 	{
-		foreach (Trapdoor trapdoor in trapdoors)
+		foreach (TrapdoorActivator activator in activators)
 		{
-			trapdoor.Unlock(sender);
+			activator.Unlock(sender);
 		}
 	}
 }
