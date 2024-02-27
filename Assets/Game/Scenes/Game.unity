@@ -2544,7 +2544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 628c172cf6b7d0b44a47b61f2e44bcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 150
 --- !u!114 &151556743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2558,8 +2558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patrolPoint: {fileID: 1536288989}
-  amountOfPoints: 16
-  radius: 3
+  amountOfPoints: 4
+  radius: 1
 --- !u!114 &151556744
 MonoBehaviour:
   m_ObjectHideFlags: 0
