@@ -549,7 +549,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 10568ae03bd22b74fbbd8de06c778f0f, type: 2}
+  - {fileID: 2100000, guid: 39a4ef9add68f7e429d8da36005ed5a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6379,6 +6379,11 @@ PrefabInstance:
       propertyPath: m_SharedVertices.Array.data[83].m_Vertices.Array.data[1]
       value: 106
       objectReference: {fileID: 0}
+    - target: {fileID: 5391194356302849246, guid: 95112f13669a28b4ea781a0f10811288,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 39a4ef9add68f7e429d8da36005ed5a2, type: 2}
     - target: {fileID: 5391194356302849246, guid: 95112f13669a28b4ea781a0f10811288,
         type: 3}
       propertyPath: m_SelectedEditorRenderState
