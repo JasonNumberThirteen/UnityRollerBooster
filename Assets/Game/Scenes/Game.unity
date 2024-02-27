@@ -4645,7 +4645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raceStateManager: {fileID: 2117144680}
-  initialTime: 60
+  initialTime: 8
 --- !u!1 &1215809286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4679,7 +4679,7 @@ MonoBehaviour:
   stateManager: {fileID: 2117144680}
   pauseMenuPanel: {fileID: 1393588488}
   sceneManager: {fileID: 1636812175}
-  playerMovement: {fileID: 6369965}
+  playerMover: {fileID: 6369965}
   playerRespawner: {fileID: 6369967}
   goalCollidable: {fileID: 1013442754}
   goalRenderer: {fileID: 1013442755}
@@ -12537,7 +12537,7 @@ PrefabInstance:
     - target: {fileID: 845505207484967765, guid: 48683864a858afa46b04abc51bb82929,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 2233
+      value: 2239
       objectReference: {fileID: 0}
     - target: {fileID: 845505207484967765, guid: 48683864a858afa46b04abc51bb82929,
         type: 3}
@@ -12572,7 +12572,7 @@ PrefabInstance:
     - target: {fileID: 6001936264791324739, guid: 48683864a858afa46b04abc51bb82929,
         type: 3}
       propertyPath: m_VersionIndex
-      value: 2226
+      value: 2232
       objectReference: {fileID: 0}
     - target: {fileID: 6001936264791324739, guid: 48683864a858afa46b04abc51bb82929,
         type: 3}
