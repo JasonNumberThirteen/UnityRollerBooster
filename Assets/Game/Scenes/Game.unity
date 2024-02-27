@@ -2412,6 +2412,7 @@ GameObject:
   - component: {fileID: 151556743}
   - component: {fileID: 151556745}
   - component: {fileID: 151556744}
+  - component: {fileID: 151556746}
   m_Layer: 0
   m_Name: Hostile Ball
   m_TagString: Untagged
@@ -2587,6 +2588,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceTolerance: 1
+--- !u!114 &151556746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151556736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce56da38b0b0174ca929a8beb6b685e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushForce: 10
 --- !u!1001 &197405864
 PrefabInstance:
   m_ObjectHideFlags: 0
