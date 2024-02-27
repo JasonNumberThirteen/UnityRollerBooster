@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PlayerMovement : MonoBehaviour
+public class PlayerMover : MonoBehaviour
 {
 	[Min(0f)] public float movementSpeed = 10f, dizzySpeedMultiplier = 0.5f, dizzyDuration = 3f, dizzyFallDistance = 3f, deathFallDistance = 5f;
 

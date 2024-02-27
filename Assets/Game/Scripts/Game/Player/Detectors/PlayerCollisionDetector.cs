@@ -9,7 +9,7 @@ public class PlayerCollisionDetector : MonoBehaviour
 			ce.TriggerOnCollisionEnter(gameObject);
 		}
 
-		if(gameObject.TryGetComponent(out PlayerMovement pm))
+		if(gameObject.TryGetComponent(out PlayerMover pm))
 		{
 			pm.CheckFallDistance();
 		}

@@ -8,7 +8,7 @@ public class RaceManager : MonoBehaviour
 	public RaceStateManager stateManager;
 	public GameObject pauseMenuPanel;
 	public GameSceneManager sceneManager;
-	public PlayerMovement playerMovement;
+	public PlayerMover playerMover;
 	public PlayerRespawner playerRespawner;
 	public GoalCollidable goalCollidable;
 	public GoalRenderer goalRenderer;
@@ -47,7 +47,7 @@ public class RaceManager : MonoBehaviour
 	{
 		stateManager.SetAsActive();
 
-		playerMovement.enabled = true;
+		playerMover.enabled = true;
 	}
 
 	private void Awake() => CheckSingleton();
@@ -70,7 +70,7 @@ public class RaceManager : MonoBehaviour
 		Destroy(goalCollidable);
 		Destroy(goalRenderer);
 
-		playerMovement.enabled = false;
+		playerMover.enabled = false;
 		playerRespawner.enabled = false;
 	}
 }
