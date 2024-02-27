@@ -49,10 +49,10 @@ The game **has some important differences** compared to the original, both visua
 
 ## Project status
 <p align = "center"><b>IN PROGRESS</b></p>
-<p align = "center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Gasr35percent.png"/></p>
+<p align = "center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Gasr40percent.png"/></p>
 
 ---
-**The project is completed in ~35%**. It still requires fixes, optimisations and upgrades. For more information about left tasks to complete, please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRollerBooster/wiki/Project-status "Project status").
+**The project is completed in ~40%**. It still requires fixes, optimisations and upgrades. For more information about left tasks to complete, please see the Wiki page linked [here](https://github.com/JasonNumberThirteen/UnityRollerBooster/wiki/Project-status "Project status").
 
 ## Credits
 - This project was made by [Jason](https://jasonxiii.pl "Jason. Cała informatyka w jednym miejscu! Oficjalna strona internetowa! Setki artykułów na różne tematy! Wszystko stworzone przez jedną osobę!").
