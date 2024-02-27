@@ -10,10 +10,14 @@ public class RaceManager : MonoBehaviour
 	public GameSceneManager sceneManager;
 	public PlayerMovement playerMovement;
 	public PlayerRespawner playerRespawner;
+	public GoalCollidable goalCollidable;
+	public GoalRenderer goalRenderer;
 
 	public void SetRaceAsWon()
 	{
 		stateManager.SetAsWon();
+		Destroy(goalCollidable);
+		Destroy(goalRenderer);
 
 		playerMovement.enabled = false;
 		playerRespawner.enabled = false;
@@ -22,6 +26,8 @@ public class RaceManager : MonoBehaviour
 	public void SetRaceAsOver()
 	{
 		stateManager.SetAsOver();
+		Destroy(goalCollidable);
+		Destroy(goalRenderer);
 
 		playerMovement.enabled = false;
 		playerRespawner.enabled = false;

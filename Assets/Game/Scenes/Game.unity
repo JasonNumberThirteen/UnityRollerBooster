@@ -4036,6 +4036,30 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1013442754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7018955424111864622, guid: 3b8e4eb48e39fe6499719350f6ee3cd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383972854328823917}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680538395d3c9ad4d96d75fe93b7c46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1013442755 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1652101209509210762, guid: 3b8e4eb48e39fe6499719350f6ee3cd1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1383972854328823917}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e8fcdcf77ea14c4ca37ff47ccade331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1047933885
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,6 +4681,8 @@ MonoBehaviour:
   sceneManager: {fileID: 1636812175}
   playerMovement: {fileID: 6369965}
   playerRespawner: {fileID: 6369967}
+  goalCollidable: {fileID: 1013442754}
+  goalRenderer: {fileID: 1013442755}
 --- !u!4 &1215809288
 Transform:
   m_ObjectHideFlags: 0
