@@ -4645,7 +4645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raceStateManager: {fileID: 2117144680}
-  initialTime: 8
+  initialTime: 60
 --- !u!1 &1215809286
 GameObject:
   m_ObjectHideFlags: 0
