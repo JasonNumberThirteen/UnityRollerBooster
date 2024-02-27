@@ -16,21 +16,13 @@ public class RaceManager : MonoBehaviour
 	public void SetRaceAsWon()
 	{
 		stateManager.SetAsWon();
-		Destroy(goalCollidable);
-		Destroy(goalRenderer);
-
-		playerMovement.enabled = false;
-		playerRespawner.enabled = false;
+		OnRaceEnd();
 	}
 
 	public void SetRaceAsOver()
 	{
 		stateManager.SetAsOver();
-		Destroy(goalCollidable);
-		Destroy(goalRenderer);
-
-		playerMovement.enabled = false;
-		playerRespawner.enabled = false;
+		OnRaceEnd();
 	}
 
 	public void SwitchPause()
@@ -71,5 +63,14 @@ public class RaceManager : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+	}
+
+	private void OnRaceEnd()
+	{
+		Destroy(goalCollidable);
+		Destroy(goalRenderer);
+
+		playerMovement.enabled = false;
+		playerRespawner.enabled = false;
 	}
 }
